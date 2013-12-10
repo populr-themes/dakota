@@ -5,8 +5,9 @@
 // will need to set that directory in @base-url (e.g. '../my-sub-directory')
 
 @base-url: '..';
+@custom-color:@custom-or-default-color;
 @accent-color: #427191;
-@accent-color-link: #529acc;
+@accent-color-link: @custom-color;
 @accent-color-link-hover: lighten(@accent-color-link,10%);
 @background-color: url("@{base-url}/images/bg.jpg") no-repeat center top;
 @headline-font-family: 'Cubano-Regular', Helvetica, Arial, sans-serif;
